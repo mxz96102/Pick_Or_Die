@@ -1,0 +1,264 @@
+*{
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #4f407e;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ffaa33;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #ff9933;
+}
+
+#start{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    transition: top 1s, transform 1s;
+    -moz-transition: top 1s, -moz-transform 1s;
+    -webkit-transition: top 1s, -webkit-transform 1s;
+    -o-transition: top 1s,-o-transform 1s;
+}
+
+#main{
+    background-image: url("bg.png");
+    background-size:cover
+}
+
+.scene{
+    width: inherit;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#img_complete{
+    margin-left: 12px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+#input-container{
+    background: url('input.png');
+    background-size:cover;
+    width: 247px;
+    height: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+}
+
+#input{
+    background: transparent;
+    text-align: center;
+    height: 25px;
+    width: 175px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: -25px;
+    font-weight: bold;
+    color:#a59fb7;
+    border: none;
+    font-family: 黑体;
+}
+
+#svg_1{
+    margin-top: 10%;
+}
+
+#circle{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.border_circle{
+    fill: none;
+    stroke-width: 2;
+    stroke: white;
+    stroke-dasharray:2;
+    transform: rotateX(-70deg);
+    -webkit-transform: rotateX(-70deg);	/* Safari 和 Chrome */
+    -moz-transform: rotateX(-70deg);	/* Firefox */
+}
+
+#chooser{
+    position: absolute;
+}
+
+.label{
+    background-color: #a59fb7;
+    color: white;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.6;
+    opacity:0.6;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: 5px;
+    height: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    float: left;
+}
+
+#label_box{
+    list-style: none;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#cartoon{
+    margin-top: 0;
+
+}
+
+
+#ball_stage{
+    height:30%;
+    width: 100%;
+}
+
+#text_stage{
+    height:50%;
+}
+
+.balls{
+    position: static;
+    float: left;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+
+}
+
+#banner,#banner_2{
+    width:100%;
+    height: 60px;
+    background-color: #211b35;
+}
+
+#title,#title2{
+    color: snow;
+    top: 20px;
+    font-size: 20px;
+}
+
+.option_text{
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    color:#a59fb7;
+    width: 95%;
+    border-bottom: #a59fb7 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(0px);
+    overflow: hidden;
+}
+
+.option_text input{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: 20px;
+    color:#a59fb7;
+    font-weight: bolder;
+    width: 100%;
+}
+#plus{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    margin-left: 20px;
+    color:#a59fb7;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+#div_plus{
+    padding-top: 20px;
+    height: 50px;
+}
+
+#ball_stage{
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);		/* IE 9 */
+    -webkit-transform: rotate(180deg);	/* Safari and Chrome */
+    -o-transform: rotate(180deg);		/* Opera */
+    -moz-transform: rotate(180deg);		/* Firefox */
+}
+
+.result_ball{
+    transition: top 1s,left 1s;
+    -moz-transition: top 1s,left 1s;	/* Firefox 4 */
+    -webkit-transition: top 1s,left 1s;	/* Safari 和 Chrome */
+    -o-transition: top 1s,left 1s;	/* Opera */
+
+}
+
+#re_button{
+    color: white;
+    font-size:30px;
+    position: absolute;
+    top: 350px;
+    display: none;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+#shake_img{
+    margin-top: 100px;
+}
+
+#result{
+    position: absolute;
+    float: left;
+    top: 60px;
+    z-index: 0;
+}
+
+.img_delete{
+    float: right;
+    position: absolute;
+    margin-top:-24px;
+    right: 10px;
+}
+
+#resultText{
+    color: snow;
+    float: left;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 56px;
+    top: 100px;;
+}
